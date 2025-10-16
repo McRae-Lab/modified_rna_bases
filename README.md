@@ -1,4 +1,4 @@
-🧬 RNA Base Modification Scripts
+# RNA Base Modification Scripts 🧬 
 
 Herein lay vibe-coded scripts for semi-automating processes in building RNA PDB models — use at your own peril.
 
@@ -7,7 +7,7 @@ These three scripts modify canonical RNA bases in .pdb structures to their modif
 Each script uses Biopython to modify atom coordinates and naming directly in the PDB file.
 They do not rebuild bonds or hydrogens—those are added later by Phenix ReadySet and geometry minimization.
 
-⚙️ Requirements
+# Requirements ⚙️ 
 
 Python ≥ 3.8
 
@@ -19,7 +19,7 @@ Install Biopython if needed:
 
 pip install biopython
 
-🚀 Usage
+# Usage 🚀 
 
 All scripts share the same interface:
 
@@ -34,8 +34,8 @@ python c_to_5mC.py -i input.pdb -o output.pdb -r 12,18-21
 
 
 If -r is omitted, all residues of the target base type (C or U) are modified.
-
-🧩 Step 2 – Add ligand restraints with Phenix ReadySet
+ 
+# Step 2 – Add ligand restraints with Phenix ReadySet 🧩
 
 After modification, run:
 
@@ -47,8 +47,8 @@ This generates:
 output.ligands.cif — custom restraints for modified bases
 
 output.updated.pdb — PDB with added hydrogens and links
-
-🔧 Step 3 – Minimize geometry in Phenix
+ 
+# Step 3 – Minimize geometry in Phenix 🔧
 
 This step relieves any bond-length or angle outliers after coordinate editing.
 
@@ -58,15 +58,15 @@ phenix.geometry_minimization modified.updated.pdb modified.ligands.cif \
 
 Examples:
 
-# For 5-methyl-cytidine
+For 5-methyl-cytidine
 phenix.geometry_minimization m5C.updated.pdb m5C.ligands.cif \
     selection="resname 5MC"
 
-# For pseudouridine
+For pseudouridine
 phenix.geometry_minimization pU.updated.pdb pU.ligands.cif \
     selection="resname PSU"
 
-# For 1-methyl-pseudouridine
+For 1-methyl-pseudouridine
 phenix.geometry_minimization 1mpU.updated.pdb 1mpU.ligands.cif \
     selection="resname 1MP"
 
@@ -79,7 +79,7 @@ Relaxed bond lengths/angles
 
 All hydrogens consistent with the modified bases
 
-🧠 Notes
+# Notes 🧠 
 
 Residue names follow Phenix/Coot conventions:
 
@@ -99,7 +99,7 @@ The scripts do not change chain IDs, residue numbers, or occupancy.
 
 Works for RNA fragments, single nucleotides, or entire models.
 
-📜 Citation / Acknowledgment
+# Citation / Acknowledgment 📜 
 
 If you adapt or extend these scripts, acknowledgement would be rad:
 
