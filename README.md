@@ -39,6 +39,8 @@ If -r is omitted, all residues of the target base type (C or U) are modified.
 
 This step relieves any bond-length or angle outliers after coordinate editing.
 
+You may need to remove hydrogens or rename them first. 
+
 phenix.geometry_minimization 5mC-input.pdb 5MC.cif \
     selection="resname 5MC" max_iterations=300
 
@@ -63,6 +65,12 @@ The resulting minimized model (minimized.pdb) will have:
 Correct covalent geometry
 
 Relaxed bond lengths/angles
+
+# Step 2 – Fix geometry with Isolde 🔧
+
+Load the model into ChimeraX and initialize isolde, rebuilding residues to match template
+
+Save the pdb - rename the hydrogens to match the cif file with fix_5mC_hnames.sh
 
 # Notes 🧠 
 
