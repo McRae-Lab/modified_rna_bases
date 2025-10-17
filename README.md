@@ -30,44 +30,31 @@ python u_to_1mpU.py -i input.pdb -o output.pdb
 
 Optional: restrict to specific residues
 
-python c_to_5mC.py -i input.pdb -o output.pdb -r 12,18-21
+python c_to_5mC.py -i input.pdb -o 5mC-input.pdb -r 12,18-21
 
 
 If -r is omitted, all residues of the target base type (C or U) are modified.
  
-# Step 2 – Add ligand restraints with Phenix ReadySet 🧩
-
-After modification, run:
-
-phenix.ready_set modified.pdb
-
-
-This generates:
-
-output.ligands.cif — custom restraints for modified bases
-
-output.updated.pdb — PDB with added hydrogens and links
- 
-# Step 3 – Minimize geometry in Phenix 🔧
+# Step 2 – Minimize geometry in Phenix 🔧
 
 This step relieves any bond-length or angle outliers after coordinate editing.
 
-phenix.geometry_minimization modified.updated.pdb modified.ligands.cif \
+phenix.geometry_minimization 5mC-input.pdb 5MC.cif \
     selection="resname 5MC" max_iterations=300
 
 
 Examples:
 
 For 5-methyl-cytidine
-phenix.geometry_minimization m5C.updated.pdb m5C.ligands.cif \
+phenix.geometry_minimization 5mC-input.pdb 5MC.cif \
     selection="resname 5MC"
 
 For pseudouridine
-phenix.geometry_minimization pU.updated.pdb pU.ligands.cif \
+phenix.geometry_minimization pU-input.pdb pU.cif \
     selection="resname PSU"
 
 For 1-methyl-pseudouridine
-phenix.geometry_minimization 1mpU.updated.pdb 1mpU.ligands.cif \
+phenix.geometry_minimization 1mpU-input.pdb 1mpU.cif \
     selection="resname 1MP"
 
 
@@ -76,8 +63,6 @@ The resulting minimized model (minimized.pdb) will have:
 Correct covalent geometry
 
 Relaxed bond lengths/angles
-
-All hydrogens consistent with the modified bases
 
 # Notes 🧠 
 
