@@ -66,8 +66,8 @@ phenix.geometry_minimization pU-input.pdb pU.cif \
     selection="resname PSU"
 
 For 1-methyl-pseudouridine
-phenix.geometry_minimization 1mpU-input.pdb 1mpU.cif \
-    selection="resname 1MP"
+phenix.geometry_minimization 1mpU-input.pdb B8H.cif \
+    selection="resname B8H"
 
 
 The resulting minimized model (minimized.pdb) will have:
