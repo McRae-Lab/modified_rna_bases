@@ -136,8 +136,8 @@ def add_methyl_N1_outward(residue):
     c1 = vadd(n1, [1.47 * x for x in bis])  # N(sp2)-C(sp3) ~1.47 Å
 
     residue.add(Atom.Atom(
-        "C1", coord=c1, bfactor=20.0, occupancy=1.0,
-        altloc=' ', fullname=" C1 ", serial_number=0, element="C"
+        "CN1", coord=c1, bfactor=20.0, occupancy=1.0,
+        altloc=' ', fullname=" CN1 ", serial_number=0, element="C"
     ))
     return True
 
