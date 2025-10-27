@@ -35,11 +35,17 @@ python c_to_5mC.py -i input.pdb -o 5mC-input.pdb -r 12,18-21
 
 If -r is omitted, all residues of the target base type (C or U) are modified.
 
-# Step 2 – Fix geometry with Isolde 🔧
+# Step 2 – Fix geometry & naming conventions 🔧
 
+For m5C:
 Load the model into ChimeraX and initialize isolde, rebuilding residues to match template
 
 Save the pdb - rename the hydrogens to match the cif file with fix_5mC_hnames.sh
+
+For m1pU
+Remove the hydrogens
+phenix.reduce m1Y.pdb -Trim > m1Y-TR_noH.pdb
+
  
 # Step 3 – Minimize geometry in Phenix 🔧
 
