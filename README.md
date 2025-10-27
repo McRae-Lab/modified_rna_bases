@@ -44,30 +44,38 @@ Save the pdb - rename the hydrogens to match the cif file with fix_5mC_hnames.sh
 
 For m1pU
 Remove the hydrogens
-phenix.reduce m1Y.pdb -Trim > m1Y-TR_noH.pdb
+`phenix.reduce m1Y.pdb -Trim > reduced.pdb`
 
  
 # Step 3 – Minimize geometry in Phenix 🔧
 
 This step relieves any bond-length or angle outliers after coordinate editing.
 
+```
 phenix.geometry_minimization 5mC-input.pdb 5MC.cif \
     selection="resname 5MC" max_iterations=300
+```
 
 
 Examples:
 
 For 5-methyl-cytidine
+```
 phenix.geometry_minimization 5mC-input.pdb 5MC.cif \
-    selection="resname 5MC"
+    selection="resname 5MC max_iterations=300 "
+```
 
 For pseudouridine
+```
 phenix.geometry_minimization pU-input.pdb pU.cif \
-    selection="resname PSU"
+    selection="resname PSU max_iterations=300"
+```
 
 For 1-methyl-pseudouridine
-phenix.geometry_minimization 1mpU-input.pdb B8H.cif \
-    selection="resname B8H"
+```
+phenix.geometry_minimization reduced.pdb B8H.cif \
+    selection="resname B8H max_iterations=300"
+```
 
 
 The resulting minimized model (minimized.pdb) will have:
