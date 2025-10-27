@@ -1,276 +1,421 @@
-# electronic Ligand Builder and Optimisation Workbench (eLBOW)
-#   - a module of PHENIX version 1.21.2-5419-
-#   - file written: Fri Oct 17 09:04:17 2025
+data_5MC
 #
-#   Ligand name: a 2 line input string
-#   Random seed: 03056941001
-#   Residue: 5MC
-#   SMILES string: CC1=CN([C@@H]2O[C@H](CO[P](O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N=C1N
-#
-data_comp_list
-loop_
-_chem_comp.id
-_chem_comp.three_letter_code
-_chem_comp.name
-_chem_comp.group
-_chem_comp.number_atoms_all
-_chem_comp.number_atoms_nh
-_chem_comp.desc_level
-5MC        5MC 'Unknown                  ' ligand 36 22 .
-#
-data_comp_5MC
+_chem_comp.id 5MC
+_chem_comp.name "5-METHYLCYTIDINE-5'-MONOPHOSPHATE"
+_chem_comp.type "RNA LINKING"
+_chem_comp.pdbx_type ATOMN
+_chem_comp.formula "C10 H16 N3 O8 P"
+_chem_comp.mon_nstd_parent_comp_id C
+_chem_comp.pdbx_synonyms ?
+_chem_comp.pdbx_formal_charge 0
+_chem_comp.pdbx_initial_date 1999-07-08
+_chem_comp.pdbx_modified_date 2011-06-04
+_chem_comp.pdbx_ambiguous_flag N
+_chem_comp.pdbx_release_status REL
+_chem_comp.pdbx_replaced_by ?
+_chem_comp.pdbx_replaces ?
+_chem_comp.formula_weight 337.223
+_chem_comp.one_letter_code C
+_chem_comp.three_letter_code 5MC
+_chem_comp.pdbx_model_coordinates_details ?
+_chem_comp.pdbx_model_coordinates_missing_flag N
+_chem_comp.pdbx_ideal_coordinates_details ?
+_chem_comp.pdbx_ideal_coordinates_missing_flag N
+_chem_comp.pdbx_model_coordinates_db_code 1EVV
+_chem_comp.pdbx_subcomponent_list ?
+_chem_comp.pdbx_processing_site RCSB
 #
 loop_
 _chem_comp_atom.comp_id
 _chem_comp_atom.atom_id
+_chem_comp_atom.alt_atom_id
 _chem_comp_atom.type_symbol
-_chem_comp_atom.type_energy
 _chem_comp_atom.charge
-_chem_comp_atom.partial_charge
-_chem_comp_atom.x
-_chem_comp_atom.y
-_chem_comp_atom.z
-5MC         P      P   P      0    .      -1.0803   -2.7821    3.6962
-5MC         OP1    O   O      0    .       0.3346   -3.2945    3.5272
-5MC         OP2    O   OP    -1    .      -1.3047   -2.3850    5.1424
-5MC         OP3    O   OP    -1    .      -2.0602   -3.8705    3.3145
-5MC        O5'     O   O2     0    .      -1.3154   -1.4378    2.7012
-5MC        C5'     C   CH2    0    .      -1.0017   -1.5529    1.3121
-5MC        C4'     C   CH1    0    .      -2.0052   -0.9424    0.5564
-5MC        O4'     O   O2     0    .      -2.0332    0.5449    0.8253
-5MC        C3'     C   CH1    0    .      -1.6939   -1.0931   -1.0090
-5MC        O3'     O   OH1    0    .      -2.6657   -2.0412   -1.6352
-5MC        C2'     C   CH1    0    .      -1.8424    0.0517   -1.4900
-5MC        O2'     O   OH1    0    .      -3.2215    0.2237   -1.9613
-5MC        C1'     C   CH1    0    .      -1.5317    1.1034   -0.2490
-5MC         N1     N   NR6    0    .      -0.1401    1.2846   -0.1027
-5MC         C2     C   CR6    0    .       0.4553    1.4591    1.2521
-5MC         O2     O   O      0    .      -0.2501    1.5554    2.2079
-5MC         N3     N   N      0    .       1.9370    1.5104    1.4064
-5MC         C4     C   CR6    0    .       2.7875    1.6202    0.2327
-5MC         N4     N   NH2    0    .       4.2037    1.8915    0.3855
-5MC         C5     C   CR6    0    .       2.1894    1.5375   -1.1279
-5MC         C6     C   CR16   0    .       0.7223    1.3218   -1.2831
-5MC         CM5    C   CH3    0    .       3.1055    1.5812   -2.3841
-5MC        H5'     H   HCH2   0    .      -0.0710   -1.0749    1.1181
-5MC        H5''    H   HCH2   0    .      -0.9324   -2.6064    1.0409
-5MC        H4'     H   HCH1   0    .      -2.9764   -1.3818    0.7875
-5MC        H3'     H   HCH1   0    .      -0.6722   -1.4354   -1.1588
-5MC        HO3'    H   HOH1   0    .      -2.1938   -2.7305   -2.0754
-5MC        H2'     H   HCH1   0    .      -1.1352    0.2122   -2.3049
-5MC        HO2'    H   HOH1   0    .      -3.2139    0.6153   -2.8322
-5MC        H1'     H   HCH1   0    .      -2.0187    2.0500   -0.4358
-5MC        HN41    H   HNH2   0    .       4.5535    2.2473    1.2531
-5MC        HN42    H   HNH2   0    .       4.8231    1.7934   -0.4050
-5MC         H6     H   HCR6   0    .       0.2855    1.2616   -2.2754
-5MC        HM51    H   HCH3   0    .       2.5364    1.2705   -3.2593
-5MC        HM52    H   HCH3   0    .       3.9560    0.9022   -2.2408
-5MC        HM53    H   HCH3   0    .       3.4702    2.5904   -2.5301
+_chem_comp_atom.pdbx_align
+_chem_comp_atom.pdbx_aromatic_flag
+_chem_comp_atom.pdbx_leaving_atom_flag
+_chem_comp_atom.pdbx_stereo_config
+_chem_comp_atom.pdbx_backbone_atom_flag
+_chem_comp_atom.pdbx_n_terminal_atom_flag
+_chem_comp_atom.pdbx_c_terminal_atom_flag
+_chem_comp_atom.model_Cartn_x
+_chem_comp_atom.model_Cartn_y
+_chem_comp_atom.model_Cartn_z
+_chem_comp_atom.pdbx_model_Cartn_x_ideal
+_chem_comp_atom.pdbx_model_Cartn_y_ideal
+_chem_comp_atom.pdbx_model_Cartn_z_ideal
+_chem_comp_atom.pdbx_component_atom_id
+_chem_comp_atom.pdbx_component_comp_id
+_chem_comp_atom.pdbx_ordinal
+5MC P P P 0 1 N N N N N N 50.109 -7.949 10.151 1.130 -0.100 -4.232 P 5MC 1
+5MC OP1 O1P O 0 1 N N N N N N 48.717 -7.449 10.362 1.708 1.219 -3.893 OP1 5MC 2
+5MC OP2 O2P O 0 1 N N N N N N 51.024 -8.102 11.312 2.287 -1.062 -4.803 OP2 5MC 3
+5MC OP3 O3P O 0 1 N Y N N N N 50.001 -9.367 9.401 -0.013 0.085 -5.351 OP3 5MC 4
+5MC "O5'" O5* O 0 1 N N N N N N 50.830 -6.988 9.102 0.487 -0.759 -2.912 "O5'" 5MC 5
+5MC "C5'" C5* C 0 1 N N N N N N 52.244 -6.857 9.086 -0.528 0.136 -2.455 "C5'" 5MC 6
+5MC "C4'" C4* C 0 1 N N R N N N 52.679 -6.121 7.845 -1.182 -0.434 -1.196 "C4'" 5MC 7
+5MC "O4'" O4* O 0 1 N N N N N N 51.896 -6.566 6.703 -0.206 -0.572 -0.140 "O4'" 5MC 8
+5MC "C3'" C3* C 0 1 N N S N N N 52.401 -4.635 7.876 -2.231 0.553 -0.637 "C3'" 5MC 9
+5MC "O3'" O3* O 0 1 N N N N N N 53.401 -3.947 8.602 -3.545 0.178 -1.056 "O3'" 5MC 10
+5MC "C2'" C2* C 0 1 N N R N N N 52.458 -4.287 6.398 -2.092 0.421 0.897 "C2'" 5MC 11
+5MC "O2'" O2* O 0 1 N N N N N N 53.767 -4.152 5.882 -3.317 -0.036 1.473 "O2'" 5MC 12
+5MC "C1'" C1* C 0 1 N N R N N N 51.743 -5.489 5.790 -0.974 -0.627 1.082 "C1'" 5MC 13
+5MC N1 N1 N 0 1 N N N N N N 50.312 -5.198 5.627 -0.131 -0.278 2.228 N1 5MC 14
+5MC C2 C2 C 0 1 N N N N N N 49.938 -4.219 4.708 0.505 0.906 2.255 C2 5MC 15
+5MC O2 O2 O 0 1 N N N N N N 50.821 -3.604 4.096 0.374 1.678 1.320 O2 5MC 16
+5MC N3 N3 N 0 1 N N N N N N 48.631 -3.956 4.514 1.277 1.249 3.285 N3 5MC 17
+5MC C4 C4 C 0 1 N N N N N N 47.714 -4.612 5.212 1.432 0.430 4.317 C4 5MC 18
+5MC N4 N4 N 0 1 N N N N N N 46.430 -4.333 4.969 2.231 0.794 5.375 N4 5MC 19
+5MC C5 C5 C 0 1 N N N N N N 48.064 -5.586 6.182 0.782 -0.821 4.318 C5 5MC 20
+5MC C6 C6 C 0 1 N N N N N N 49.363 -5.859 6.349 0.001 -1.155 3.263 C6 5MC 21
+5MC CM5 CM5 C 0 1 N N N N N N 46.991 -6.163 7.045 0.949 -1.769 5.477 CM5 5MC 22
+5MC HOP2 2HOP H 0 0 N N N N N N 51.909 -8.419 11.177 2.645 -0.632 -5.592 HOP2 5MC 23
+5MC HOP3 3HOP H 0 0 N N N N N N 50.886 -9.684 9.266 -0.362 -0.795 -5.542 HOP3 5MC 24
+5MC "H5'" 1H5* H 0 1 N N N N N N 52.629 -6.375 10.014 -1.281 0.258 -3.233 "H5'" 5MC 25
+5MC "H5''" 2H5* H 0 0 N N N N N N 52.756 -7.842 9.189 -0.082 1.104 -2.226 "H5''" 5MC 26
+5MC "H4'" H4* H 0 1 N N N N N N 53.773 -6.324 7.781 -1.646 -1.396 -1.412 "H4'" 5MC 27
+5MC "H3'" H3* H 0 1 N N N N N N 51.441 -4.358 8.372 -2.005 1.570 -0.957 "H3'" 5MC 28
+5MC "HO3'" *HO3 H 0 0 N Y N N N N 53.226 -3.013 8.621 -4.154 0.828 -0.679 "HO3'" 5MC 29
+5MC "H2'" H2* H 0 1 N N N N N N 52.005 -3.293 6.172 -1.797 1.374 1.337 "H2'" 5MC 30
+5MC "HO2'" *HO2 H 0 0 N N N N N N 53.802 -3.934 4.957 -3.987 0.631 1.272 "HO2'" 5MC 31
+5MC "H1'" H1* H 0 1 N N N N N N 52.170 -5.734 4.789 -1.403 -1.620 1.215 "H1'" 5MC 32
+5MC HN41 1HN4 H 0 0 N N N N N N 45.724 -4.837 5.505 2.683 1.653 5.369 HN41 5MC 33
+5MC HN42 2HN4 H 0 0 N N N N N N 46.243 -4.452 3.973 2.343 0.194 6.129 HN42 5MC 34
+5MC H6 H6 H 0 1 N N N N N N 49.651 -6.630 7.082 -0.509 -2.106 3.242 H6 5MC 35
+5MC HM51 1HM5 H 0 0 N N N N N N 47.266 -6.928 7.807 1.610 -1.322 6.220 HM51 5MC 36
+5MC HM52 2HM5 H 0 0 N N N N N N 46.449 -5.329 7.551 -0.023 -1.966 5.928 HM52 5MC 37
+5MC HM53 3HM5 H 0 0 N N N N N N 46.188 -6.578 6.391 1.381 -2.705 5.122 HM53 5MC 38
 #
 loop_
 _chem_comp_bond.comp_id
 _chem_comp_bond.atom_id_1
 _chem_comp_bond.atom_id_2
-_chem_comp_bond.type
-_chem_comp_bond.value_dist
-_chem_comp_bond.value_dist_esd
-5MC   P       OP1   deloc         1.514 0.020
-5MC   P       OP2   deloc         1.517 0.020
-5MC   P       OP3   deloc         1.513 0.020
-5MC   P      O5'    single        1.689 0.020
-5MC  O5'     C5'    single        1.429 0.020
-5MC  C5'     C4'    single        1.397 0.020
-5MC  C5'     H5'    single        1.064 0.020
-5MC  C5'     H5''   single        1.090 0.020
-5MC  C4'     O4'    single        1.512 0.020
-5MC  C4'     C3'    single        1.603 0.020
-5MC  C4'     H4'    single        1.091 0.020
-5MC  O4'     C1'    single        1.311 0.020
-5MC  C3'     O3'    single        1.495 0.020
-5MC  C3'     C2'    single        1.251 0.020
-5MC  C3'     H3'    single        1.088 0.020
-5MC  O3'     HO3'   single        0.944 0.020
-5MC  C2'     O2'    single        1.468 0.020
-5MC  C2'     C1'    single        1.656 0.020
-5MC  C2'     H2'    single        1.091 0.020
-5MC  O2'     HO2'   single        0.955 0.020
-5MC  C1'      N1    single        1.411 0.020
-5MC  C1'     H1'    single        1.081 0.020
-5MC   N1      C2    single        1.490 0.020
-5MC   N1      C6    single        1.462 0.020
-5MC   C2      O2    double        1.192 0.020
-5MC   C2      N3    single        1.491 0.020
-5MC   N3      C4    double        1.454 0.020
-5MC   C4      N4    single        1.450 0.020
-5MC   C4      C5    single        1.489 0.020
-5MC   N4     HN41   single        1.001 0.020
-5MC   N4     HN42   single        1.009 0.020
-5MC   C5      C6    double        1.491 0.020
-5MC   C5      CM5   single        1.555 0.020
-5MC   C6      H6    single        1.086 0.020
-5MC   CM5    HM51   single        1.089 0.020
-5MC   CM5    HM52   single        1.098 0.020
-5MC   CM5    HM53   single        1.083 0.020
+_chem_comp_bond.value_order
+_chem_comp_bond.pdbx_aromatic_flag
+_chem_comp_bond.pdbx_stereo_config
+_chem_comp_bond.pdbx_ordinal
+5MC P OP1 DOUB N N 1
+5MC P OP2 SING N N 2
+5MC P OP3 SING N N 3
+5MC P "O5'" SING N N 4
+5MC OP2 HOP2 SING N N 5
+5MC OP3 HOP3 SING N N 6
+5MC "O5'" "C5'" SING N N 7
+5MC "C5'" "C4'" SING N N 8
+5MC "C5'" "H5'" SING N N 9
+5MC "C5'" "H5''" SING N N 10
+5MC "C4'" "O4'" SING N N 11
+5MC "C4'" "C3'" SING N N 12
+5MC "C4'" "H4'" SING N N 13
+5MC "O4'" "C1'" SING N N 14
+5MC "C3'" "O3'" SING N N 15
+5MC "C3'" "C2'" SING N N 16
+5MC "C3'" "H3'" SING N N 17
+5MC "O3'" "HO3'" SING N N 18
+5MC "C2'" "O2'" SING N N 19
+5MC "C2'" "C1'" SING N N 20
+5MC "C2'" "H2'" SING N N 21
+5MC "O2'" "HO2'" SING N N 22
+5MC "C1'" N1 SING N N 23
+5MC "C1'" "H1'" SING N N 24
+5MC N1 C2 SING N N 25
+5MC N1 C6 SING N N 26
+5MC C2 O2 DOUB N N 27
+5MC C2 N3 SING N N 28
+5MC N3 C4 DOUB N N 29
+5MC C4 N4 SING N N 30
+5MC C4 C5 SING N N 31
+5MC N4 HN41 SING N N 32
+5MC N4 HN42 SING N N 33
+5MC C5 C6 DOUB N N 34
+5MC C5 CM5 SING N N 35
+5MC C6 H6 SING N N 36
+5MC CM5 HM51 SING N N 37
+5MC CM5 HM52 SING N N 38
+5MC CM5 HM53 SING N N 39
 #
 loop_
-_chem_comp_angle.comp_id
-_chem_comp_angle.atom_id_1
-_chem_comp_angle.atom_id_2
-_chem_comp_angle.atom_id_3
-_chem_comp_angle.value_angle
-_chem_comp_angle.value_angle_esd
-5MC  O5'      P       OP3         109.50 3.000
-5MC  O5'      P       OP2         109.44 3.000
-5MC   OP3     P       OP2         109.45 3.000
-5MC  O5'      P       OP1         109.49 3.000
-5MC   OP3     P       OP1         109.48 3.000
-5MC   OP2     P       OP1         109.47 3.000
-5MC  C5'     O5'      P           118.56 3.000
-5MC  H5''    C5'     H5'          109.46 3.000
-5MC  H5''    C5'     C4'          109.49 3.000
-5MC  H5'     C5'     C4'          109.47 3.000
-5MC  H5''    C5'     O5'          109.49 3.000
-5MC  H5'     C5'     O5'          109.46 3.000
-5MC  C4'     C5'     O5'          109.45 3.000
-5MC  H4'     C4'     C3'          109.99 3.000
-5MC  H4'     C4'     O4'          110.01 3.000
-5MC  C3'     C4'     O4'          105.65 3.000
-5MC  H4'     C4'     C5'          110.43 3.000
-5MC  C3'     C4'     C5'          110.35 3.000
-5MC  O4'     C4'     C5'          110.31 3.000
-5MC  C1'     O4'     C4'          105.45 3.000
-5MC  H3'     C3'     C2'          110.28 3.000
-5MC  H3'     C3'     O3'          110.68 3.000
-5MC  C2'     C3'     O3'          110.01 3.000
-5MC  H3'     C3'     C4'          110.27 3.000
-5MC  C2'     C3'     C4'          105.45 3.000
-5MC  O3'     C3'     C4'          110.03 3.000
-5MC  HO3'    O3'     C3'          109.47 3.000
-5MC  H2'     C2'     C1'          110.16 3.000
-5MC  H2'     C2'     O2'          110.61 3.000
-5MC  C1'     C2'     O2'          110.03 3.000
-5MC  H2'     C2'     C3'          110.18 3.000
-5MC  C1'     C2'     C3'          105.71 3.000
-5MC  O2'     C2'     C3'          110.02 3.000
-5MC  HO2'    O2'     C2'          109.48 3.000
-5MC  H1'     C1'      N1          110.48 3.000
-5MC  H1'     C1'     C2'          110.00 3.000
-5MC   N1     C1'     C2'          110.14 3.000
-5MC  H1'     C1'     O4'          110.03 3.000
-5MC   N1     C1'     O4'          110.31 3.000
-5MC  C2'     C1'     O4'          105.77 3.000
-5MC   C6      N1      C2          119.69 3.000
-5MC   C6      N1     C1'          120.08 3.000
-5MC   C2      N1     C1'          120.22 3.000
-5MC   N3      C2      O2          120.17 3.000
-5MC   N3      C2      N1          119.69 3.000
-5MC   O2      C2      N1          120.14 3.000
-5MC   C4      N3      C2          120.04 3.000
-5MC   C5      C4      N4          119.94 3.000
-5MC   C5      C4      N3          119.92 3.000
-5MC   N4      C4      N3          120.03 3.000
-5MC  HN42     N4     HN41         119.94 3.000
-5MC  HN42     N4      C4          119.92 3.000
-5MC  HN41     N4      C4          119.95 3.000
-5MC   CM5     C5      C6          119.97 3.000
-5MC   CM5     C5      C4          120.00 3.000
-5MC   C6      C5      C4          119.90 3.000
-5MC   H6      C6      C5          119.93 3.000
-5MC   H6      C6      N1          119.93 3.000
-5MC   C5      C6      N1          120.00 3.000
-5MC  HM53     CM5    HM52         109.46 3.000
-5MC  HM53     CM5    HM51         109.48 3.000
-5MC  HM52     CM5    HM51         109.47 3.000
-5MC  HM53     CM5     C5          109.48 3.000
-5MC  HM52     CM5     C5          109.48 3.000
-5MC  HM51     CM5     C5          109.46 3.000
+_pdbx_chem_comp_descriptor.comp_id
+_pdbx_chem_comp_descriptor.type
+_pdbx_chem_comp_descriptor.program
+_pdbx_chem_comp_descriptor.program_version
+_pdbx_chem_comp_descriptor.descriptor
+5MC SMILES ACDLabs 10.04 O=C1N=C(N)C(=CN1C2OC(C(O)C2O)COP(=O)(O)O)C
+5MC SMILES_CANONICAL CACTVS 3.341 CC1=CN([C@@H]2O[C@H](CO[P](O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N=C1N
+5MC SMILES CACTVS 3.341 CC1=CN([CH]2O[CH](CO[P](O)(O)=O)[CH](O)[CH]2O)C(=O)N=C1N
+5MC SMILES_CANONICAL "OpenEye OEToolkits" 1.5.0 CC1=CN(C(=O)N=C1N)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O
+5MC SMILES "OpenEye OEToolkits" 1.5.0 CC1=CN(C(=O)N=C1N)C2C(C(C(O2)COP(=O)(O)O)O)O
+5MC InChI InChI 1.03 InChI=1S/C10H16N3O8P/c1-4-2-13(10(16)12-8(4)11)9-7(15)6(14)5(21-9)3-20-22(17,18)19/h2,5-7,9,14-15H,3H2,1H3,(H2,11,12,16)(H2,17,18,19)/t5-,6-,7-,9-/m1/s1
+5MC InChIKey InChI 1.03 NJQONZSFUKNYOY-JXOAFFINSA-N
 #
 loop_
-_chem_comp_tor.comp_id
-_chem_comp_tor.id
-_chem_comp_tor.atom_id_1
-_chem_comp_tor.atom_id_2
-_chem_comp_tor.atom_id_3
-_chem_comp_tor.atom_id_4
-_chem_comp_tor.value_angle
-_chem_comp_tor.value_angle_esd
-_chem_comp_tor.period
-5MC CONST_01       N3      C2      N1      C1'         173.79   0.0 0
-5MC CONST_02       C4      N3      C2      N1           10.48   0.0 0
-5MC CONST_03       C5      C4      N3      C2           -6.42   0.0 0
-5MC CONST_04       C6      N1      C2      N3           -7.12   0.0 0
-5MC CONST_05       O2      C2      N1      C1'          -6.11   0.0 0
-5MC CONST_06       N4      C4      N3      C2          169.82   0.0 0
-5MC CONST_07       C6      N1      C2      O2          172.98   0.0 0
-5MC CONST_08       C4      N3      C2      O2         -169.62   0.0 0
-5MC CONST_09      HN41     N4      C4      N3          -16.71   0.0 0
-5MC CONST_10      HN42     N4      C4      N3          168.28   0.0 0
-5MC Var_01        C2'      C1'    O4'     C4'           26.92  30.0 1
-5MC Var_02         N1      C1'    O4'     C4'          -92.16  30.0 1
-5MC Var_03         C1'    C2'     C3'     C4'           26.94  30.0 1
-5MC Var_04        C2'     C3'     C4'     O4'          -12.44  30.0 1
-5MC Var_05        C3'     C2'      C1'    O4'          -37.64  30.0 1
-5MC Var_06         C2      N1      C1'    O4'          -27.74  30.0 3
-5MC Var_07         C6      N1      C1'    O4'          153.18  30.0 3
-5MC Var_08         C1'    O4'     C4'     C3'          -12.38  30.0 1
-5MC Var_09         N1      C1'    C2'     C3'           81.56  30.0 1
-5MC Var_10         C2      N1      C1'    C2'         -144.13  30.0 3
-5MC Var_11         C6      N1      C1'    C2'           36.79  30.0 3
-5MC Var_12         C1'    O4'     C4'     C5'          106.88  30.0 1
-5MC Var_13        C2'     C3'     C4'     C5'         -131.68  30.0 1
-5MC Var_14        O2'     C2'     C3'     C4'          -91.83  30.0 1
-5MC Var_15        O3'     C3'     C4'     O4'         -131.04  30.0 1
-5MC Var_16        O2'     C2'      C1'    O4'           81.13  30.0 1
-5MC Var_17         C1'    C2'     C3'     O3'          145.55  30.0 1
-5MC Var_18         N1      C1'    C2'     O2'         -159.68  30.0 1
-5MC Var_19        H1'      C1'    O4'     C4'          145.70  30.0 1
-5MC Var_20        H2'     C2'     C3'     C4'          145.95  30.0 1
-5MC Var_21        H3'     C3'     C4'     O4'          106.60  30.0 1
-5MC Var_22        H4'     C4'     C3'     C2'          106.25  30.0 1
-5MC Var_23        O4'     C4'     C5'     O5'           65.13  30.0 3
-5MC Var_24        C3'     C4'     C5'     O5'         -178.50  30.0 3
-5MC Var_25        O3'     C3'     C4'     C5'          109.72  30.0 1
-5MC Var_26        O2'     C2'     C3'     O3'           26.78  30.0 1
-5MC Var_27        HO3'    O3'     C3'     C4'         -124.89  30.0 3
-5MC Var_28        H5'     C5'     C4'     O4'          -54.85  30.0 1
-5MC Var_29        H5''    C5'     C4'     O4'         -174.84  30.0 1
-5MC Var_30        HO2'    O2'     C2'     C3'         -133.62  30.0 3
-5MC Var_31        HM51     CM5     C5      C4          166.40  30.0 3
-5MC Var_32        HM52     CM5     C5      C4           46.40  30.0 3
-5MC Var_33        HM53     CM5     C5      C4          -73.60  30.0 3
-5MC Var_34        C4'     C5'     O5'      P           137.18  30.0 3
-5MC Var_35        C5'     O5'      P       OP1          52.82  30.0 3
-5MC Var_36        C5'     O5'      P       OP2         172.80  30.0 3
-5MC Var_37        C5'     O5'      P       OP3         -67.22  30.0 3
+_pdbx_chem_comp_identifier.comp_id
+_pdbx_chem_comp_identifier.type
+_pdbx_chem_comp_identifier.program
+_pdbx_chem_comp_identifier.program_version
+_pdbx_chem_comp_identifier.identifier
+5MC "SYSTEMATIC NAME" ACDLabs 10.04 "5-methylcytidine 5'-(dihydrogen phosphate)"
+5MC "SYSTEMATIC NAME" "OpenEye OEToolkits" 1.5.0 "[(2R,3S,4R,5R)-5-(4-amino-5-methyl-2-oxo-pyrimidin-1-yl)-3,4-dihydroxy-oxolan-2-yl]methyl dihydrogen phosphate"
 #
 loop_
-_chem_comp_chir.comp_id
-_chem_comp_chir.id
-_chem_comp_chir.atom_id_centre
-_chem_comp_chir.atom_id_1
-_chem_comp_chir.atom_id_2
-_chem_comp_chir.atom_id_3
-_chem_comp_chir.volume_sign
-5MC chir_01  C4'     C5'     O4'     C3'    negativ
-5MC chir_02  C3'     O3'     C4'     C2'    positiv
-5MC chir_03  C2'     O2'     C3'      C1'   positiv
-5MC chir_04   C1'    O4'      N1     C2'    negativ
+_pdbx_chem_comp_audit.comp_id
+_pdbx_chem_comp_audit.action_type
+_pdbx_chem_comp_audit.date
+_pdbx_chem_comp_audit.processing_site
+5MC 'Create component' 1999-07-08 RCSB
+5MC 'Modify descriptor' 2011-06-04 RCSB
+#
+_pdbe_chem_comp_drugbank_details.comp_id 5MC
+_pdbe_chem_comp_drugbank_details.drugbank_id DB01995
+_pdbe_chem_comp_drugbank_details.type 'small molecule'
+_pdbe_chem_comp_drugbank_details.name "5-methylcytidine 5'-monophosphate"
+_pdbe_chem_comp_drugbank_details.description ?
+_pdbe_chem_comp_drugbank_details.cas_number 3590-36-1
+_pdbe_chem_comp_drugbank_details.mechanism_of_action ?
 #
 loop_
-_chem_comp_plane_atom.comp_id
-_chem_comp_plane_atom.plane_id
-_chem_comp_plane_atom.atom_id
-_chem_comp_plane_atom.dist_esd
-5MC plan-1    C1' 0.020
-5MC plan-1     N1 0.020
-5MC plan-1     C2 0.020
-5MC plan-1     O2 0.020
-5MC plan-1     N3 0.020
-5MC plan-1     C4 0.020
-5MC plan-1     N4 0.020
-5MC plan-1     C5 0.020
-5MC plan-1     C6 0.020
-5MC plan-1    CM5 0.020
-5MC plan-1   HN41 0.020
-5MC plan-1   HN42 0.020
-5MC plan-1     H6 0.020
+_pdbe_chem_comp_synonyms.comp_id
+_pdbe_chem_comp_synonyms.name
+_pdbe_chem_comp_synonyms.provenance
+_pdbe_chem_comp_synonyms.type
+5MC 5-methyl-CMP DrugBank ?
+5MC "5-methylcytidine-5'-monophosphate" DrugBank ?
+5MC '5-methylcytidylic acid' DrugBank ?
+#
+_pdbe_chem_comp_drugbank_classification.comp_id 5MC
+_pdbe_chem_comp_drugbank_classification.drugbank_id DB01995
+_pdbe_chem_comp_drugbank_classification.parent 'Pyrimidine ribonucleoside monophosphates'
+_pdbe_chem_comp_drugbank_classification.kingdom 'Organic compounds'
+_pdbe_chem_comp_drugbank_classification.class 'Pyrimidine nucleotides'
+_pdbe_chem_comp_drugbank_classification.superclass 'Nucleosides, nucleotides, and analogues'
+_pdbe_chem_comp_drugbank_classification.description
+'This compound belongs to the class of organic compounds known as pyrimidine ribonucleoside monophosphates. These are pyrimidine ribobucleotides with monophosphate group  linked to the ribose moiety.'
+#
+loop_
+_software.name
+_software.version
+_software.description
+rdkit 2025.03.3 'Core functionality.'
+pdbeccdutils 1.0.0 'Wrapper to provide 2D templates and molecular fragments.'
+#
+loop_
+_pdbe_chem_comp_atom_depiction.comp_id
+_pdbe_chem_comp_atom_depiction.atom_id
+_pdbe_chem_comp_atom_depiction.element
+_pdbe_chem_comp_atom_depiction.model_Cartn_x
+_pdbe_chem_comp_atom_depiction.model_Cartn_y
+_pdbe_chem_comp_atom_depiction.pdbx_ordinal
+5MC P P 10.336 -4.915 1
+5MC OP1 O 11.218 -6.129 2
+5MC OP2 O 11.550 -4.033 3
+5MC OP3 O 9.123 -5.797 4
+5MC "O5'" O 9.455 -3.701 5
+5MC "C5'" C 7.963 -3.858 6
+5MC "C4'" C 7.081 -2.645 7
+5MC "O4'" O 7.545 -1.218 8
+5MC "C3'" C 5.581 -2.645 9
+5MC "O3'" O 4.699 -3.858 10
+5MC "C2'" C 5.118 -1.218 11
+5MC "O2'" O 3.691 -0.755 12
+5MC "C1'" C 6.331 -0.337 13
+5MC N1 N 6.331 1.163 14
+5MC C2 C 7.630 1.914 15
+5MC O2 O 8.929 1.163 16
+5MC N3 N 7.630 3.413 17
+5MC C4 C 6.331 4.163 18
+5MC N4 N 6.331 5.663 19
+5MC C5 C 5.032 3.413 20
+5MC C6 C 5.032 1.914 21
+5MC CM5 C 3.733 4.163 22
+#
+loop_
+_pdbe_chem_comp_bond_depiction.comp_id
+_pdbe_chem_comp_bond_depiction.atom_id_1
+_pdbe_chem_comp_bond_depiction.atom_id_2
+_pdbe_chem_comp_bond_depiction.value_order
+_pdbe_chem_comp_bond_depiction.bond_dir
+_pdbe_chem_comp_bond_depiction.pdbx_ordinal
+5MC P OP1 DOUBLE NONE 1
+5MC P OP2 SINGLE NONE 2
+5MC P OP3 SINGLE NONE 3
+5MC P "O5'" SINGLE NONE 4
+5MC "O5'" "C5'" SINGLE NONE 5
+5MC "C4'" "C5'" SINGLE BEGINDASH 6
+5MC "C4'" "O4'" SINGLE NONE 7
+5MC "C4'" "C3'" SINGLE NONE 8
+5MC "O4'" "C1'" SINGLE NONE 9
+5MC "C3'" "O3'" SINGLE BEGINWEDGE 10
+5MC "C3'" "C2'" SINGLE NONE 11
+5MC "C2'" "O2'" SINGLE BEGINWEDGE 12
+5MC "C2'" "C1'" SINGLE NONE 13
+5MC "C1'" N1 SINGLE BEGINDASH 14
+5MC N1 C2 SINGLE NONE 15
+5MC N1 C6 SINGLE NONE 16
+5MC C2 O2 DOUBLE NONE 17
+5MC C2 N3 SINGLE NONE 18
+5MC N3 C4 DOUBLE NONE 19
+5MC C4 N4 SINGLE NONE 20
+5MC C4 C5 SINGLE NONE 21
+5MC C5 C6 DOUBLE NONE 22
+5MC C5 CM5 SINGLE NONE 23
+#
+loop_
+_pdbe_chem_comp_substructure.comp_id
+_pdbe_chem_comp_substructure.substructure_name
+_pdbe_chem_comp_substructure.id
+_pdbe_chem_comp_substructure.substructure_type
+_pdbe_chem_comp_substructure.substructure_smiles
+_pdbe_chem_comp_substructure.substructure_inchis
+_pdbe_chem_comp_substructure.substructure_inchikeys
+5MC MurckoScaffold S1 scaffold 'O=c1ncccn1[C@H]1CCCO1' InChI=1S/C8H10N2O2/c11-8-9-4-2-5-10(8)7-3-1-6-12-7/h2,4-5,7H,1,3,6H2/t7-/m1/s1 AKXKPKRAUWTVBW-SSDOTTSWSA-N
+5MC phosphate F1 fragment O=P(O)(O)O InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4) NBIIXXVUZAFLBC-UHFFFAOYSA-N
+5MC pyrimidine F2 fragment c1cncnc1 InChI=1S/C4H4N2/c1-2-5-4-6-3-1/h1-4H CZPWVGJYEJSRLH-UHFFFAOYSA-N
+5MC ribose F3 fragment OCC1OCC(O)C1O InChI=1S/C5H10O4/c6-1-4-5(8)3(7)2-9-4/h3-8H,1-2H2 KZVAAIRBJJYZOW-UHFFFAOYSA-N
+#
+loop_
+_pdbe_chem_comp_substructure_mapping.comp_id
+_pdbe_chem_comp_substructure_mapping.atom_id
+_pdbe_chem_comp_substructure_mapping.substructure_id
+_pdbe_chem_comp_substructure_mapping.substructure_ordinal
+5MC "C4'" S1 1
+5MC "O4'" S1 1
+5MC "C3'" S1 1
+5MC "C2'" S1 1
+5MC "C1'" S1 1
+5MC N1 S1 1
+5MC C2 S1 1
+5MC O2 S1 1
+5MC N3 S1 1
+5MC C4 S1 1
+5MC C5 S1 1
+5MC C6 S1 1
+5MC OP2 F1 1
+5MC P F1 1
+5MC OP1 F1 1
+5MC OP3 F1 1
+5MC "O5'" F1 1
+5MC C5 F2 1
+5MC C4 F2 1
+5MC N3 F2 1
+5MC C2 F2 1
+5MC N1 F2 1
+5MC C6 F2 1
+5MC "C2'" F3 1
+5MC "C3'" F3 1
+5MC "C4'" F3 1
+5MC "O4'" F3 1
+5MC "C1'" F3 1
+5MC "C5'" F3 1
+5MC "O5'" F3 1
+5MC "O3'" F3 1
+5MC "O2'" F3 1
+#
+_pdbe_chem_comp_rdkit_properties.comp_id 5MC
+_pdbe_chem_comp_rdkit_properties.exactmw 337.068
+_pdbe_chem_comp_rdkit_properties.amw 337.225
+_pdbe_chem_comp_rdkit_properties.lipinskiHBA 11
+_pdbe_chem_comp_rdkit_properties.lipinskiHBD 6
+_pdbe_chem_comp_rdkit_properties.NumRotatableBonds 10
+_pdbe_chem_comp_rdkit_properties.NumHBD 5
+_pdbe_chem_comp_rdkit_properties.NumHBA 11
+_pdbe_chem_comp_rdkit_properties.NumHeavyAtoms 22
+_pdbe_chem_comp_rdkit_properties.NumAtoms 38
+_pdbe_chem_comp_rdkit_properties.NumHeteroatoms 12
+_pdbe_chem_comp_rdkit_properties.NumAmideBonds 0
+_pdbe_chem_comp_rdkit_properties.FractionCSP3 0.600
+_pdbe_chem_comp_rdkit_properties.NumRings 2
+_pdbe_chem_comp_rdkit_properties.NumAromaticRings 1
+_pdbe_chem_comp_rdkit_properties.NumAliphaticRings 1
+_pdbe_chem_comp_rdkit_properties.NumSaturatedRings 1
+_pdbe_chem_comp_rdkit_properties.NumHeterocycles 2
+_pdbe_chem_comp_rdkit_properties.NumAromaticHeterocycles 1
+_pdbe_chem_comp_rdkit_properties.NumSaturatedHeterocycles 1
+_pdbe_chem_comp_rdkit_properties.NumAliphaticHeterocycles 1
+_pdbe_chem_comp_rdkit_properties.NumSpiroAtoms 0
+_pdbe_chem_comp_rdkit_properties.NumBridgeheadAtoms 0
+_pdbe_chem_comp_rdkit_properties.NumAtomStereoCenters 4
+_pdbe_chem_comp_rdkit_properties.NumUnspecifiedAtomStereoCenters 0
+_pdbe_chem_comp_rdkit_properties.labuteASA 146.662
+_pdbe_chem_comp_rdkit_properties.tpsa 177.360
+_pdbe_chem_comp_rdkit_properties.CrippenClogP -1.673
+_pdbe_chem_comp_rdkit_properties.CrippenMR 70.584
+_pdbe_chem_comp_rdkit_properties.chi0v 10.949
+_pdbe_chem_comp_rdkit_properties.chi1v 6.507
+_pdbe_chem_comp_rdkit_properties.chi2v 2.414
+_pdbe_chem_comp_rdkit_properties.chi3v 2.414
+_pdbe_chem_comp_rdkit_properties.chi4v 1.440
+_pdbe_chem_comp_rdkit_properties.chi0n 26.055
+_pdbe_chem_comp_rdkit_properties.chi1n 12.574
+_pdbe_chem_comp_rdkit_properties.chi2n 2.099
+_pdbe_chem_comp_rdkit_properties.chi3n 2.099
+_pdbe_chem_comp_rdkit_properties.chi4n 1.245
+_pdbe_chem_comp_rdkit_properties.hallKierAlpha -1.330
+_pdbe_chem_comp_rdkit_properties.kappa1 5.636
+_pdbe_chem_comp_rdkit_properties.kappa2 6.048
+_pdbe_chem_comp_rdkit_properties.kappa3 3.524
+_pdbe_chem_comp_rdkit_properties.Phi 1.549
+#
+loop_
+_pdbe_chem_comp_external_mappings.comp_id
+_pdbe_chem_comp_external_mappings.source
+_pdbe_chem_comp_external_mappings.resource
+_pdbe_chem_comp_external_mappings.resource_id
+5MC UniChem DrugBank DB01995
+5MC UniChem ChEBI 74725
+5MC UniChem ZINC ZINC000013511986
+5MC UniChem SureChEMBL SCHEMBL3504106
+5MC UniChem ACTor 3590-36-1
+5MC UniChem Nikkaji J2.565.296G
+5MC UniChem BRENDA 112748
+5MC UniChem ChemicalBook CB12684836
+5MC UniChem 'Probes And Drugs' PD060192
+5MC UniChem ACTor 117309-80-5
+5MC UniChem PubChem 192785
+#
+loop_
+_pdbe_chem_comp_rdkit_conformer.comp_id
+_pdbe_chem_comp_rdkit_conformer.atom_id
+_pdbe_chem_comp_rdkit_conformer.Cartn_x_rdkit
+_pdbe_chem_comp_rdkit_conformer.Cartn_y_rdkit
+_pdbe_chem_comp_rdkit_conformer.Cartn_z_rdkit
+_pdbe_chem_comp_rdkit_conformer.rdkit_method
+_pdbe_chem_comp_rdkit_conformer.rdkit_ordinal
+5MC P 4.969 0.941 -0.498 ETKDGv3 1
+5MC OP1 4.426 2.206 -1.123 ETKDGv3 2
+5MC OP2 5.862 0.079 -1.650 ETKDGv3 3
+5MC OP3 5.982 1.352 0.794 ETKDGv3 4
+5MC "O5'" 3.685 -0.014 0.093 ETKDGv3 5
+5MC "C5'" 2.906 -0.438 -1.000 ETKDGv3 6
+5MC "C4'" 1.721 -1.258 -0.481 ETKDGv3 7
+5MC "O4'" 0.913 -0.457 0.347 ETKDGv3 8
+5MC "C3'" 0.846 -1.782 -1.615 ETKDGv3 9
+5MC "O3'" 1.287 -3.037 -2.067 ETKDGv3 10
+5MC "C2'" -0.525 -1.863 -0.977 ETKDGv3 11
+5MC "O2'" -0.843 -3.186 -0.625 ETKDGv3 12
+5MC "C1'" -0.391 -0.992 0.281 ETKDGv3 13
+5MC N1 -1.384 0.094 0.273 ETKDGv3 14
+5MC C2 -1.249 1.250 -0.574 ETKDGv3 15
+5MC O2 -0.249 1.395 -1.326 ETKDGv3 16
+5MC N3 -2.274 2.245 -0.565 ETKDGv3 17
+5MC C4 -3.342 2.124 0.167 ETKDGv3 18
+5MC N4 -4.324 3.164 0.125 ETKDGv3 19
+5MC C5 -3.535 0.917 1.024 ETKDGv3 20
+5MC C6 -2.587 -0.035 1.051 ETKDGv3 21
+5MC CM5 -4.782 0.759 1.852 ETKDGv3 22
+5MC HOP2 6.193 -0.719 -1.166 ETKDGv3 23
+5MC HOP3 6.741 1.832 0.376 ETKDGv3 24
+5MC "H5'" 2.511 0.436 -1.568 ETKDGv3 25
+5MC "H5''" 3.509 -1.083 -1.678 ETKDGv3 26
+5MC "H4'" 2.111 -2.112 0.120 ETKDGv3 27
+5MC "H3'" 0.805 -1.054 -2.460 ETKDGv3 28
+5MC "HO3'" 2.065 -2.867 -2.659 ETKDGv3 29
+5MC "H2'" -1.290 -1.466 -1.686 ETKDGv3 30
+5MC "HO2'" -1.806 -3.188 -0.380 ETKDGv3 31
+5MC "H1'" -0.533 -1.618 1.191 ETKDGv3 32
+5MC HN41 -4.175 4.000 -0.484 ETKDGv3 33
+5MC HN42 -5.199 3.123 0.692 ETKDGv3 34
+5MC H6 -2.726 -0.917 1.666 ETKDGv3 35
+5MC HM51 -5.673 0.767 1.189 ETKDGv3 36
+5MC HM52 -4.855 1.595 2.579 ETKDGv3 37
+5MC HM53 -4.788 -0.194 2.423 ETKDGv3 38
+#
