@@ -2,14 +2,14 @@
 """
 u_to_1mpU.py
 ------------
-Convert uridines (U) to 1-methyl-pseudouridines (1MP).
+Convert uridines (U) to 1-methyl-pseudouridines (B8H).
 
 Steps:
   1) Rigid-body U→Ψ base reorientation (C1′–C5 linkage), same method as u_to_pU.py.
   2) Add N1-methyl carbon (C1) 1.47 Å from N1, in-plane and pointing OUTWARD
      from the ring (robust direction check using the ring centroid).
 Conventions:
-  - Residue name -> 1MP
+  - Residue name -> B8H
   - Methyl carbon atom name -> C1
 
 Usage:
@@ -143,7 +143,7 @@ def add_methyl_N1_outward(residue):
 
 # ---------- CLI ----------
 def main():
-    ap = argparse.ArgumentParser(description="Convert U → 1MP (Ψ + N1 methyl).")
+    ap = argparse.ArgumentParser(description="Convert U → B8H (Ψ + N1 methyl).")
     ap.add_argument("-i","--input", required=True)
     ap.add_argument("-o","--output", required=True)
     ap.add_argument("-r","--residues", help="Residue numbers/ranges (e.g., 12,33-41). Default: all U residues.")
@@ -168,8 +168,8 @@ def main():
             for res in chain:
                 if res.get_resname().strip() == "U" and res.id[1] in (target_nums if args.residues else target_nums):
                     if convert_U_to_PSU_inplace(res) and add_methyl_N1_outward(res):
-                        res.resname = "1MP"
-                        print(f"  1MP: converted U→Ψ and added C1 at residue {res.id[1]}")
+                        res.resname = "B8H"
+                        print(f"  B8H: converted U→Ψ and added C1 at residue {res.id[1]}")
                         n_mod += 1
                 elif args.residues and res.id[1] in target_nums:
                     print(f"  Skipped {res.id[1]} (resname {res.get_resname().strip()}, not U)")
