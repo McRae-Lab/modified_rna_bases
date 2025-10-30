@@ -92,13 +92,13 @@ Residue names follow Phenix/Coot conventions:
 
 pseudouridine → PSU
 
-1-methyl-pseudouridine → 1MP
+1-methyl-pseudouridine → B8H
 
 Atom names match the Phenix ligand dictionary:
 
 C5 methyl → CM5
 
-N1 methyl → C1
+N1 methyl → CN1
 
 The scripts do not change chain IDs, residue numbers, or occupancy.
 
