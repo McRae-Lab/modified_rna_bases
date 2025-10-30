@@ -40,7 +40,8 @@ If -r is omitted, all residues of the target base type (C or U) are modified.
 For m5C:
 Load the model into ChimeraX and initialize isolde, rebuilding residues to match template
 
-Save the pdb - rename the hydrogens to match the cif file with fix_5mC_hnames.sh
+Save the pdb - rename the hydrogens to match the cif file with 
+`fix_5mC_hnames.sh`
 
 For m1pU
 Remove the hydrogens
@@ -86,7 +87,7 @@ Relaxed bond lengths/angles
 
 # Notes 🧠 
 
-Residue names follow Phenix/Coot conventions:
+Residue names follow PDBe CCD naming conventions:
 
 5-methyl-cytidine → 5MC
 
