@@ -63,19 +63,19 @@ Examples:
 For 5-methyl-cytidine
 ```
 phenix.geometry_minimization 5mC-input.pdb 5MC.cif \
-    selection="resname 5MC max_iterations=300 "
+    selection="resname 5MC" max_iterations=300 
 ```
 
 For pseudouridine
 ```
 phenix.geometry_minimization pU-input.pdb pU.cif \
-    selection="resname PSU max_iterations=300"
+    selection="resname PSU" max_iterations=300
 ```
 
 For 1-methyl-pseudouridine
 ```
 phenix.geometry_minimization reduced.pdb B8H.cif \
-    selection="resname B8H max_iterations=300"
+    selection="resname B8H" max_iterations=300
 ```
 
 
