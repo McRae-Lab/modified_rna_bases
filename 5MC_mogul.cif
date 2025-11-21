@@ -1,0 +1,279 @@
+# electronic Ligand Builder and Optimisation Workbench (eLBOW)
+#   - a module of PHENIX version dev-svn-
+#   - file written: Thu Oct 30 21:35:43 2025
+#
+#   Inital geometry file: a 97 line input string
+#   Ligand name: 5-methylcytidine 5'-(dihydrogen phosphate)
+#   CSD Mogul values: True
+#   Random seed: 3628800
+#   SMILES string: CC1=CN([C@@H]2O[C@H](CO[P](O)(O)=O)[C@@H](O)[C@H]2O)C(=O)N=C1N
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+5MC        5MC '5-methylcytidine 5'-(dihydrogen phosphate)' RNA 36 22 .
+#
+data_comp_5MC
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.charge
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+5MC         P      P   P      0    .      50.1090   -7.9490   10.1510
+5MC         OP1    O   O      0    .      48.7170   -7.4490   10.3620
+5MC         OP2    O   OP    -1    .      51.0240   -8.1020   11.3120
+5MC         OP3    O   OP    -1    .      50.0010   -9.3670    9.4010
+5MC        O5'     O   O2     0    .      50.8300   -6.9880    9.1020
+5MC        C5'     C   CH2    0    .      52.2440   -6.8570    9.0860
+5MC        C4'     C   CH1    0    .      52.6790   -6.1210    7.8450
+5MC        O4'     O   O2     0    .      51.8960   -6.5660    6.7030
+5MC        C3'     C   CH1    0    .      52.4010   -4.6350    7.8760
+5MC        O3'     O   OH1    0    .      53.4010   -3.9470    8.6020
+5MC        C2'     C   CH1    0    .      52.4580   -4.2870    6.3980
+5MC        O2'     O   OH1    0    .      53.7670   -4.1520    5.8820
+5MC        C1'     C   CH1    0    .      51.7430   -5.4890    5.7900
+5MC         N1     N   NR6    0    .      50.3120   -5.1980    5.6270
+5MC         C2     C   CR6    0    .      49.9380   -4.2190    4.7080
+5MC         O2     O   O      0    .      50.8210   -3.6040    4.0960
+5MC         N3     N   N      0    .      48.6310   -3.9560    4.5140
+5MC         C4     C   CR6    0    .      47.7140   -4.6120    5.2120
+5MC         N4     N   NH2    0    .      46.4300   -4.3330    4.9690
+5MC         C5     C   CR6    0    .      48.0640   -5.5860    6.1820
+5MC         C6     C   CR16   0    .      49.3630   -5.8590    6.3490
+5MC         CM5    C   CH3    0    .      46.9910   -6.1630    7.0450
+5MC        H5'     H   HCH2   0    .      52.6290   -6.3750   10.0140
+5MC        H5''    H   HCH2   0    .      52.7560   -7.8420    9.1890
+5MC        H4'     H   HCH1   0    .      53.7730   -6.3240    7.7810
+5MC        H3'     H   HCH1   0    .      51.4410   -4.3580    8.3720
+5MC        HO3'    H   HOH1   0    .      53.2260   -3.0130    8.6210
+5MC        H2'     H   HCH1   0    .      52.0050   -3.2930    6.1720
+5MC        HO2'    H   HOH1   0    .      53.8020   -3.9340    4.9570
+5MC        H1'     H   HCH1   0    .      52.1700   -5.7340    4.7890
+5MC        HN41    H   HNH2   0    .      45.7240   -4.8370    5.5050
+5MC        HN42    H   HNH2   0    .      46.2430   -4.4520    3.9730
+5MC         H6     H   HCR6   0    .      49.6510   -6.6300    7.0820
+5MC        HM51    H   HCH3   0    .      47.2660   -6.9280    7.8070
+5MC        HM52    H   HCH3   0    .      46.4490   -5.3290    7.5510
+5MC        HM53    H   HCH3   0    .      46.1880   -6.5780    6.3910
+#
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+5MC   P       OP1   deloc         1.533 0.020
+5MC   P       OP2   deloc         1.490 0.028
+5MC   P       OP3   deloc         1.533 0.031
+5MC   P      O5'    single        1.600 0.028
+5MC  O5'     C5'    single        1.443 0.031
+5MC  C5'     C4'    single        1.508 0.015
+5MC  C5'     H5'    single        1.114 0.011
+5MC  C5'     H5''   single        1.115 0.011
+5MC  C4'     O4'    single        1.444 0.011
+5MC  C4'     C3'    single        1.526 0.011
+5MC  C4'     H4'    single        1.115 0.012
+5MC  O4'     C1'    single        1.416 0.012
+5MC  C3'     O3'    single        1.424 0.011
+5MC  C3'     C2'    single        1.531 0.012
+5MC  C3'     H3'    single        1.116 0.013
+5MC  O3'     HO3'   single        0.950 0.013
+5MC  C2'     O2'    single        1.424 0.013
+5MC  C2'     C1'    single        1.531 0.012
+5MC  C2'     H2'    single        1.115 0.014
+5MC  O2'     HO2'   single        0.951 0.014
+5MC  C1'      N1    single        1.471 0.014
+5MC  C1'     H1'    single        1.116 0.017
+5MC   N1      C2    single        1.399 0.017
+5MC   N1      C6    single        1.376 0.012
+5MC   C2      O2    double        1.232 0.014
+5MC   C2      N3    single        1.358 0.014
+5MC   N3      C4    double        1.335 0.013
+5MC   C4      N4    single        1.336 0.010
+5MC   C4      C5    single        1.438 0.018
+5MC   N4     HN41   single        1.020 0.010
+5MC   N4     HN42   single        1.020 0.010
+5MC   C5      C6    double        1.342 0.010
+5MC   C5      CM5   single        1.502 0.010
+5MC   C6      H6    single        1.102 0.018
+5MC   CM5    HM51   single        1.114 0.018
+5MC   CM5    HM52   single        1.116 0.018
+5MC   CM5    HM53   single        1.116 0.018
+#
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+5MC  O5'      P       OP3         106.50 2.448
+5MC  O5'      P       OP2         106.49 2.367
+5MC   OP3     P       OP2         113.38 2.523
+5MC  O5'      P       OP1         106.50 2.448
+5MC   OP3     P       OP1         108.66 2.744
+5MC   OP2     P       OP1         113.38 2.523
+5MC  C5'     O5'      P           117.05 1.000
+5MC  H5''    C5'     H5'           98.43 3.000
+5MC  H5''    C5'     C4'          112.02 3.000
+5MC  H5'     C5'     C4'          112.01 3.000
+5MC  H5''    C5'     O5'          112.01 3.000
+5MC  H5'     C5'     O5'          111.99 3.000
+5MC  C4'     C5'     O5'          108.88 2.300
+5MC  H4'     C4'     C3'          127.40 3.000
+5MC  H4'     C4'     O4'          127.40 3.000
+5MC  C3'     C4'     O4'          105.21 1.310
+5MC  H4'     C4'     C5'          127.40 3.000
+5MC  C3'     C4'     C5'          115.17 1.752
+5MC  O4'     C4'     C5'          109.50 1.448
+5MC  C1'     O4'     C4'          109.33 1.660
+5MC  H3'     C3'     C2'          124.09 3.000
+5MC  H3'     C3'     O3'          124.09 3.000
+5MC  C2'     C3'     O3'          111.81 2.660
+5MC  H3'     C3'     C4'          124.09 3.000
+5MC  C2'     C3'     C4'          102.49 1.000
+5MC  O3'     C3'     C4'          111.10 2.487
+5MC  HO3'    O3'     C3'          110.98 3.000
+5MC  H2'     C2'     C1'          124.72 3.000
+5MC  H2'     C2'     O2'          124.72 3.000
+5MC  C1'     C2'     O2'          110.56 2.808
+5MC  H2'     C2'     C3'          124.72 3.000
+5MC  C1'     C2'     C3'          101.56 1.205
+5MC  O2'     C2'     C3'          111.81 2.660
+5MC  HO2'    O2'     C2'          114.27 3.000
+5MC  H1'     C1'      N1          123.27 3.000
+5MC  H1'     C1'     C2'          123.27 3.000
+5MC   N1     C1'     C2'          113.46 1.702
+5MC  H1'     C1'     O4'          123.27 3.000
+5MC   N1     C1'     O4'          108.33 1.136
+5MC  C2'     C1'     O4'          106.50 1.187
+5MC   C6      N1      C2          121.04 1.000
+5MC   C6      N1     C1'          121.36 1.523
+5MC   C2      N1     C1'          118.19 1.609
+5MC   N3      C2      O2          122.47 1.126
+5MC   N3      C2      N1          118.74 1.000
+5MC   O2      C2      N1          118.97 1.002
+5MC   C4      N3      C2          120.94 1.000
+5MC   C5      C4      N4          120.16 1.000
+5MC   C5      C4      N3          122.49 1.000
+5MC   N4      C4      N3          118.84 1.241
+5MC  HN42     N4     HN41         109.18 3.000
+5MC  HN42     N4      C4          109.22 3.000
+5MC  HN41     N4      C4          117.81 3.000
+5MC   CM5     C5      C6          122.99 1.000
+5MC   CM5     C5      C4          121.67 1.000
+5MC   C6      C5      C4          115.44 1.000
+5MC   H6      C6      C5          118.35 3.000
+5MC   H6      C6      N1          118.35 3.000
+5MC   C5      C6      N1          123.30 1.000
+5MC  HM53     CM5    HM52         101.20 3.000
+5MC  HM53     CM5    HM51         108.85 3.000
+5MC  HM52     CM5    HM51         108.84 3.000
+5MC  HM53     CM5     C5          108.80 3.000
+5MC  HM52     CM5     C5          108.80 3.000
+5MC  HM51     CM5     C5          118.90 3.000
+#
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+5MC CONST_01       N3      C2      N1      C1'         178.33   0.0 0
+5MC CONST_02       C4      N3      C2      N1            1.12   0.0 0
+5MC CONST_03       C5      C4      N3      C2            0.72   0.0 0
+5MC CONST_04       C6      N1      C2      N3           -1.72   0.0 0
+5MC CONST_05       O2      C2      N1      C1'          -2.22   0.0 0
+5MC CONST_06       N4      C4      N3      C2         -178.90   0.0 0
+5MC CONST_07       C6      N1      C2      O2          177.74   0.0 0
+5MC CONST_08       C4      N3      C2      O2         -178.32   0.0 0
+5MC CONST_09      HN41     N4      C4      N3          179.99   0.0 0
+5MC CONST_10      HN42     N4      C4      N3           54.72   0.0 0
+5MC Var_01        C2'      C1'    O4'     C4'           -0.67  30.0 1
+5MC Var_02         N1      C1'    O4'     C4'         -119.77  30.0 1
+5MC Var_03         C1'    C2'     C3'     C4'           40.28  30.0 1
+5MC Var_04        C2'     C3'     C4'     O4'          -41.48  30.0 1
+5MC Var_05        C3'     C2'      C1'    O4'          -25.17  30.0 1
+5MC Var_06         C2      N1      C1'    O4'         -176.34  30.0 3
+5MC Var_07         C6      N1      C1'    O4'            3.70  30.0 3
+5MC Var_08         C1'    O4'     C4'     C3'           26.55  30.0 1
+5MC Var_09         N1      C1'    C2'     C3'           93.19  30.0 1
+5MC Var_10         C2      N1      C1'    C2'           66.61  30.0 3
+5MC Var_11         C6      N1      C1'    C2'         -113.34  30.0 3
+5MC Var_12         C1'    O4'     C4'     C5'          148.43  30.0 1
+5MC Var_13        C2'     C3'     C4'     C5'         -160.45  30.0 1
+5MC Var_14        O2'     C2'     C3'     C4'          -79.32  30.0 1
+5MC Var_15        O3'     C3'     C4'     O4'         -159.69  30.0 1
+5MC Var_16        O2'     C2'      C1'    O4'           96.54  30.0 1
+5MC Var_17         C1'    C2'     C3'     O3'          158.36  30.0 1
+5MC Var_18         N1      C1'    C2'     O2'         -145.09  30.0 1
+5MC Var_19         CM5     C5      C6      N1         -173.00  30.0 1
+5MC Var_20         CM5     C5      C4      N3          172.62  30.0 1
+5MC Var_21        H1'      C1'    O4'     C4'          120.39  30.0 1
+5MC Var_22        H2'     C2'     C3'     C4'          164.12  30.0 1
+5MC Var_23        H3'     C3'     C4'     O4'           81.74  30.0 1
+5MC Var_24        H4'     C4'     C3'     C2'           82.30  30.0 1
+5MC Var_25         H6      C6      N1      C1'           0.33  30.0 1
+5MC Var_26        O4'     C4'     C5'     O5'          -40.44  30.0 3
+5MC Var_27        C3'     C4'     C5'     O5'           74.24  30.0 3
+5MC Var_28        O3'     C3'     C4'     C5'           81.35  30.0 1
+5MC Var_29        O2'     C2'     C3'     O3'           38.76  30.0 1
+5MC Var_30         CM5     C5      C4      N4           -7.77  30.0 1
+5MC Var_31        HO3'    O3'     C3'     C4'          179.98  30.0 3
+5MC Var_32        H5'     C5'     C4'     O4'         -165.67  30.0 2
+5MC Var_33        H5''    C5'     C4'     O4'           84.82  30.0 2
+5MC Var_34        HO2'    O2'     C2'     C3'         -179.99  30.0 3
+5MC Var_35        HM51     CM5     C5      C4         -179.99  30.0 3
+5MC Var_36        HM52     CM5     C5      C4          -54.71  30.0 3
+5MC Var_37        HM53     CM5     C5      C4           54.71  30.0 3
+5MC Var_38        C4'     C5'     O5'      P           168.71  30.0 3
+5MC Var_39        C5'     O5'      P       OP1         154.85  30.0 3
+5MC Var_40        C5'     O5'      P       OP2          24.21  30.0 3
+5MC Var_41        C5'     O5'      P       OP3         -90.84  30.0 3
+#
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+5MC chir_01  C4'     C5'     O4'     C3'    negativ
+5MC chir_02  C3'     O3'     C4'     C2'    positiv
+5MC chir_03  C2'     O2'     C3'      C1'   positiv
+5MC chir_04   C1'    O4'      N1     C2'    negativ
+#
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+5MC plan-1    C1' 0.020
+5MC plan-1     N1 0.020
+5MC plan-1     C2 0.020
+5MC plan-1     O2 0.020
+5MC plan-1     N3 0.020
+5MC plan-1     C4 0.020
+5MC plan-1     N4 0.020
+5MC plan-1     C5 0.020
+5MC plan-1     C6 0.020
+5MC plan-1   HN41 0.020
+5MC plan-1   HN42 0.020
